@@ -1,0 +1,13 @@
+/*https://google-webfonts-helper.herokuapp.com/fonts/montserrat?subsets=latin*/
+@font-face{
+    font-family:"mont";
+    src:url(Montserrat-Regular.ttf) format("opentype");
+}
+@font-face{
+    font-family:"mont-med";
+    src:url(Montserrat-Medium.ttf) format("opentype");
+}
+@font-face{
+    font-family:"mont-bold";
+    src:url(Montserrat-Bold.ttf) format("opentype");
+}

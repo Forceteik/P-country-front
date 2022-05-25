@@ -1,0 +1,35 @@
+.instr-root {
+  white-space: normal;
+}
+
+.instr-title {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+
+.instr-descr {
+  margin: 0px;
+  color: #535c73;
+  font-size: 16px;
+  line-height: 162%;
+  margin-bottom: 16px;
+}
+
+.instr-img-block {
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.instr-img-block-title {
+  font-family: "inter-med";
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.instr-img {
+  max-width: 100%;
+  object-fit: contain;
+}

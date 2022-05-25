@@ -1,0 +1,13 @@
+/* https://fonts.google.com/specimen/Inter?query=Inter */
+@font-face{
+    font-family:"inter";
+    src:url(Inter-Regular.ttf) format("opentype");
+}
+@font-face{
+    font-family:"inter-med";
+    src:url(Inter-Medium.ttf) format("opentype");
+}
+@font-face{
+    font-family:"inter-bold";
+    src:url(Inter-Bold.ttf) format("opentype");
+}

@@ -1,0 +1,495 @@
+.reportTitle {
+  margin-top: 62px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+
+  .reportTitleTitle {
+    font-family: 'inter-bold';
+    font-size: 32px;
+    margin-right: 12px;
+  }
+
+  .reportTitleImg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.reportAccentText {
+  color: #535c73;
+
+  &:not(:last-child) {
+    margin-bottom: 24px !important;
+  }
+
+  span {
+    color: #23262f;
+  }
+}
+
+.reportTitleDescr {
+  color: #535c73;
+  padding-right: 14px;
+}
+
+.reportDetails {
+  .reportTitleTitle {
+    font-family: 'inter-bold';
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #f28601;
+  }
+
+  .reportParagraph {
+    color: #535c73;
+    line-height: 150%;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    span {
+      color: #23262f;
+    }
+  }
+
+  .reportRole {
+    margin-bottom: 24px;
+    font-family: 'inter-med';
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+
+  .reportAccentTextWithoutMargin {
+    color: #535c73;
+
+    span {
+      color: #23262f;
+    }
+  }
+
+  .reportMoto {
+    background-color: #f6f7fa;
+    border-radius: 12px;
+    padding: 7px 18px;
+    display: flex;
+    margin-bottom: 24px;
+
+    img {
+      margin-right: 8px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+  }
+
+  .reportTextWithTitle {
+    p:first-child {
+      color: #23262f;
+    }
+  }
+
+  .reportTextWithTitle:not(:last-child) {
+    margin-bottom: 28px;
+  }
+
+  .reportRecommendations {
+    background: #f6f7fa;
+    margin-left: -32px;
+    margin-right: -24px;
+    margin-bottom: -32px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 32px;
+  }
+
+  .reportRecommendationsContainer {
+    margin-left: 8px;
+  }
+
+  .reportRecommendationsHeader {
+    font-family: 'inter-bold' !important;
+    margin-left: 0 !important;
+    margin-top: 4px;
+  }
+
+  .reportTitleWithIcon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+
+  .reportTitleIcon {
+    margin-left: 8px;
+    font-size: 18px;
+    font-family: 'inter-med';
+    line-height: 110%;
+    color: #23262f;
+  }
+
+  .reportText {
+    color: #535c73;
+  }
+
+  .reportSecondTitle {
+    font-family: 'inter-med';
+    margin-bottom: 16px;
+    color: #23262f;
+  }
+
+  .reportBlock:not(:last-child) {
+    margin-bottom: 56px;
+  }
+
+  .reportBlockTitle {
+    font-family: 'inter-bold';
+    font-size: 26px;
+    margin-bottom: 24px;
+    line-height: 110%;
+  }
+
+  .reportPositiveTitle::before {
+    background-color: #22c2a4;
+  }
+
+  .reportNeutralTitle::before {
+    background-color: #f28601;
+  }
+
+  .reportNegativeTitle::before {
+    background-color: #ef466f;
+  }
+
+  .reportTitleWithMark {
+    font-family: 'inter-med';
+    padding-left: 16px;
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #23262f;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      content: '';
+      border-radius: 23px;
+      width: 4px;
+      height: 24px;
+    }
+  }
+
+  .reportList {
+    padding-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    .MuiListSubheader-root {
+      flex-basis: 100%;
+      padding-left: 0;
+      color: #23262f;
+      font-size: 18px;
+      margin-bottom: 14px;
+      line-height: 150%;
+    }
+
+    .MuiListSubheader-sticky {
+      position: relative;
+    }
+
+    li {
+      p {
+        line-height: 130%;
+      }
+
+      min-height: 35px;
+      color: #535c73;
+      align-items: flex-start;
+      padding: 0;
+      flex-basis: 100%;
+      padding-left: 16px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        border-radius: 23px;
+        width: 4px;
+        height: 24px;
+      }
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .reportPositiveList {
+    li::before {
+      background-color: #22c2a4;
+    }
+  }
+
+  .reportWarningList {
+    li::before {
+      background-color: #f28601;
+    }
+  }
+
+  .reportNegativeList {
+    li::before {
+      background-color: #ef466f;
+    }
+  }
+
+  .reportTwoColumn {
+    li {
+      flex-basis: 48%;
+    }
+  }
+
+  .reportThreeColumn {
+    li {
+      flex-basis: 33%;
+    }
+  }
+
+  .reportBackgroundBlock {
+    background-color: #f6f7fa;
+    padding: 40px 26px 40px 34px;
+    margin-bottom: 62px;
+    margin-left: -32px;
+    margin-right: -24px;
+  }
+}
+
+.determination {
+  .reportList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+
+    .MuiListSubheader-root {
+      flex-basis: 100%;
+      padding-left: 0;
+      color: #23262f;
+      font-size: 18px;
+      margin-bottom: 16px;
+      line-height: 150%;
+    }
+
+    .MuiListSubheader-sticky {
+      position: relative;
+    }
+
+    li {
+      color: #535c73;
+      padding: 0;
+      padding-left: 14px;
+      position: relative;
+      margin-bottom: 16px;
+
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 13px;
+        transform: translateY(-50%);
+        content: '';
+        border-radius: 23px;
+        width: 4px;
+        height: 18px;
+      }
+    }
+  }
+
+  .reportPositiveList {
+    li::before {
+      background-color: #22c2a4;
+    }
+  }
+
+  .reportNegativeList {
+    li::before {
+      background-color: #ef466f;
+    }
+  }
+
+  .reportOrangeList {
+    li::before {
+      background-color: #f28601;
+    }
+  }
+
+  .reportNeutralList {
+    li::before {
+      background-color: #979dad;
+    }
+  }
+}
+
+.liderParagraph {
+  color: #535c73;
+  margin-bottom: 24px;
+}
+
+.twoColumnRoot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.twoColumnItem {
+  flex-basis: 49%;
+}
+
+.liderListTitle {
+  font-family: 'inter-bold';
+}
+
+.liderListTitleEmployer {
+  font-family: 'inter-med';
+  font-size: 16px !important;
+}
+
+.reportDetailsEmployer {
+  padding-top: 24px !important;
+  margin-top: 16px !important;
+  border-top: 1px solid #e1e3e8;
+}
+
+@media (max-width: 1280px) {
+  .reportDetails {
+    .reportThreeColumn {
+      li {
+        flex-basis: 48%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .reportTitleDescr {
+    padding-right: 0px;
+  }
+
+  .reportTitle {
+    margin-top: 12px;
+    margin-bottom: 20px;
+
+    .reportTitleTitle {
+      font-size: 26px;
+    }
+  }
+
+  .reportTitleImg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .reportAccentText:not(:last-child) {
+    margin-bottom: 20px !important;
+  }
+
+  .reportDetails {
+    .reportTitleTitle {
+      font-size: 20px;
+      margin-right: 12px;
+      margin-bottom: 16px;
+      line-height: 120%;
+    }
+
+    .reportRecommendations {
+      margin-left: -23px;
+      margin-right: -23px;
+      margin-bottom: -24px;
+    }
+
+    .reportBlockTitle {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .reportMoto {
+      align-items: flex-start;
+
+      img {
+        padding-top: 3px;
+      }
+    }
+
+    .reportRole {
+      margin-bottom: 20px;
+    }
+
+    .reportTextWithTitle:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    .reportSecondTitle {
+      font-size: 18px;
+      margin-bottom: 8px;
+      line-height: '120%';
+    }
+
+    .reportBlock:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    .reportList {
+      p {
+        flex: 14px;
+      }
+
+      margin-bottom: 8px;
+
+      li {
+        min-height: 24px;
+        margin-bottom: 19px;
+      }
+    }
+
+    .reportTwoColumn {
+      li {
+        flex-basis: 100%;
+      }
+    }
+
+    .reportBackgroundBlock {
+      padding: 29px 23px 29px 21px;
+      margin-left: -24px;
+    }
+
+    .reportThreeColumn {
+      li {
+        flex-basis: 100%;
+      }
+    }
+
+    .reportTitleWithIcon {
+      margin-bottom: 8px;
+    }
+  }
+
+  .twoColumnRoot {
+    flex-wrap: wrap;
+  }
+
+  .twoColumnItem {
+    flex-basis: 100%;
+  }
+
+  .liderListTitle {
+    font-size: 16px !important;
+  }
+}

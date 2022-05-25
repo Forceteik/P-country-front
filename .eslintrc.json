@@ -1,0 +1,94 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/recommended"
+  ],
+  "settings": {
+    "next": {
+      "rootDir": "/src"
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "prettier",
+    "import",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 120,
+        "semi": true,
+        "quoteProps": "consistent",
+        "newline-before-return": true,
+        "extends": ["next", "prettier"],
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "all",
+        "endOfLine": "auto"
+      }
+    ],
+    // NextJs specific fix: suppress errors for missing 'import React' in files for nextjs
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    // NextJs specific fix: allow jsx syntax in js files
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }], //should add ".ts" if typescript project
+    "react/display-name": 1,
+
+    "no-console": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off",
+
+    "react/jsx-props-no-spreading": "off",
+    "import/export": "off",
+    "consistent-return": "off",
+    "react/jsx-no-bind": "off",
+
+    "no-else-return": "warn",
+    "import/no-cycle": "off",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/default-props-match-prop-types": ["error", { "allowRequiredDefaults": true }],
+    "no-unused-expressions": "warn",
+    "no-unused-labels": "warn",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "no-nested-ternary": "warn",
+
+    // https://github.com/facebook/create-react-app/discussions/11864
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+
+    "import/order": ["warn", {
+      "groups": ["external", "builtin", "internal", "parent", "sibling", "index", "object", "unknown"],
+      "pathGroups": [
+        { "pattern": "@mui/**", "group": "external", "position": "after" },
+        { "pattern": "pages/**", "group": "internal" },
+        { "pattern": "components/**", "group": "internal" },
+        { "pattern": "containers/**", "group": "internal" },
+        { "pattern": "context/**", "group": "internal" },
+        { "pattern": "constants/**", "group": "internal" },
+        { "pattern": "i18n/**", "group": "internal" },
+        { "pattern": "utils/**", "group": "object" },
+        { "pattern": "styles/**", "group": "object", "position": "after" }
+      ],
+      "pathGroupsExcludedImportTypes": ["internal"],
+      "newlines-between": "always"
+    }]
+  }
+}
